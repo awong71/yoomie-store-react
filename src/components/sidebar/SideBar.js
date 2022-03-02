@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { IoBarChartSharp, IoTimerSharp, IoCashOutline, IoCart, IoPeopleSharp, IoFolderOpenSharp, IoLibrarySharp, IoAirplaneSharp, IoCardSharp, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from "react-icons/io5";
 import {FaEllipsisH} from "react-icons/fa";

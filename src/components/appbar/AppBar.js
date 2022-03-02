@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
 import { IoEllipsisVertical, IoNotificationsSharp, IoEnterSharp, IoSearchCircleSharp} from 'react-icons/io5';
 import { IconButton } from '../../ui/buttons';

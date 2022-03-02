@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Link, useNavigate} from 'react-router-dom'
+import React from 'react';
+import {useNavigate} from 'react-router-dom'
 
 import { IoToggleSharp } from 'react-icons/io5';
 import {LoginContainer, LoginForms, LoginForm, LoginLogoImage, LoginButton, LoginToggle, LoginText} from './styles'
