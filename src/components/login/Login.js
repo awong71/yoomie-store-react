@@ -13,7 +13,9 @@ function Login(props) {
 
     return ( 
         <LoginContainer style={{ backgroundImage: "url(/img/login-bg.jpg)"}}>
-            <LoginLogoImage src="/img/logo-nobg.png" alt="Yoomie logo"></LoginLogoImage>
+            <LoginLogoImage src="/img/logo-wName.png" alt="Yoomie logo"></LoginLogoImage>
+            
+
 
         <LoginForms onSubmit={onSubmitHandler}>
             <LoginForm required className="userNameForm" type="text" id="userName" name="userName" placeholder="Username"></LoginForm>

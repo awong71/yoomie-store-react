@@ -29,7 +29,7 @@ const LoginForm = styled.input`
 
 const LoginLogoImage = styled.img`
     display:block;
-    height:5rem;
+    height:8rem;
     margin: 2rem auto;
 `;
 
