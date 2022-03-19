@@ -1,5 +1,10 @@
 import React from 'react';
+
 import {Link} from 'react-router-dom'
+import { signOut } from 'firebase/auth'
+import { auth } from './../../libs/firebase'
+
+
 import { IoEllipsisVertical, IoNotificationsSharp, IoEnterSharp, IoSearchCircleSharp} from 'react-icons/io5';
 import { IconButton } from '../../ui/buttons';
 import logo from './logo-nobg.png'
@@ -8,6 +13,12 @@ import {AppBarStyles, AppBarItems, AppBarItemGroup, AppBarItem, AppBarLogo} from
 
 
 function AppBar(props) {
+
+    function onLogoutRequest(e){
+        signOut(auth)
+    }
+
+
     return ( 
         <AppBarStyles>
             <AppBarItems>
@@ -22,8 +33,10 @@ function AppBar(props) {
                     <IconButton className='iconButton'>
                         <IoEllipsisVertical size="1.25rem"/>
                     </IconButton>
-                    <IconButton >
-                        <Link to="/" style={{color:"#494949"}}><IoEnterSharp size="1.5rem"/></Link>
+                    <IconButton onClick={onLogoutRequest}>
+                        {/* <Link to="/" style={{color:"#494949"}}> */}
+                            <IoEnterSharp size="1.5rem"/>
+                            {/* </Link> */}
                     </IconButton>
                     
                 </AppBarItemGroup>
