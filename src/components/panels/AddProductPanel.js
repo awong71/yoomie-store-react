@@ -1,7 +1,8 @@
 import React from 'react';
 import {PanelStyles, PanelBody, PanelHeader} from './styles'
-import { ProductEditor} from './../../components/products/ProductEditor';
 
+
+import { AddProduct } from './../products/widgets/AddProduct'
 function AddProductPanel({title, ...props}) {
     return ( 
            <PanelStyles>
@@ -9,7 +10,7 @@ function AddProductPanel({title, ...props}) {
                    <h2>{title || "Display Panel"}</h2>
                </PanelHeader>
                <PanelBody>
-                    <ProductEditor/>
+                   <AddProduct/>
                </PanelBody>
            </PanelStyles>
      );

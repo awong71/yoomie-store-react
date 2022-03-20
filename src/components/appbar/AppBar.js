@@ -1,6 +1,5 @@
 import React from 'react';
 
-import {Link} from 'react-router-dom'
 import { signOut } from 'firebase/auth'
 import { auth } from './../../libs/firebase'
 
@@ -34,9 +33,7 @@ function AppBar(props) {
                         <IoEllipsisVertical size="1.25rem"/>
                     </IconButton>
                     <IconButton onClick={onLogoutRequest}>
-                        {/* <Link to="/" style={{color:"#494949"}}> */}
                             <IoEnterSharp size="1.5rem"/>
-                            {/* </Link> */}
                     </IconButton>
                     
                 </AppBarItemGroup>
