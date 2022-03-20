@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { IoBarChartSharp, IoTimerSharp, IoCashOutline, IoCart, IoPeopleSharp, IoFolderOpenSharp, IoLibrarySharp, IoAirplaneSharp, IoCardSharp, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from "react-icons/io5";
 import {FaEllipsisH} from "react-icons/fa";
@@ -9,8 +10,8 @@ function SideBar(props) {
     return ( 
         <SideBarContainer>
             <SideBarItems>
-                <SideBarItem className="dashboardMenu" href="#"><IoTimerSharp></IoTimerSharp> Dashboard</SideBarItem>
-                <SideBarItem className="dashboardMenu" href="#"><IoCashOutline></IoCashOutline> Sales</SideBarItem>
+                <Link to="/dashboard"><SideBarItem className="dashboardMenu" href="#"><IoTimerSharp></IoTimerSharp> Dashboard</SideBarItem></Link>
+                <Link to="add"><SideBarItem className="dashboardMenu" href="#"><IoCashOutline></IoCashOutline> Sales</SideBarItem></Link>
                 <SideBarItem className="dashboardMenu" href="#"><IoLibrarySharp></IoLibrarySharp> Products</SideBarItem>
                 <SideBarItem className="dashboardMenu" href="#"><IoPeopleSharp></IoPeopleSharp> Customers</SideBarItem>
                 <SideBarItem className="dashboardMenu" href="#"><IoFolderOpenSharp></IoFolderOpenSharp> Inquiries</SideBarItem>

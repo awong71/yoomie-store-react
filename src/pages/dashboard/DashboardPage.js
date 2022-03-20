@@ -4,7 +4,7 @@ import { SideBar } from '../../components/sidebar';
 import { DashboardPanel } from '../../components/panels';
 
 import { onAuthStateChanged } from 'firebase/auth'
-import { useNavigate } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import { auth } from './../../libs/firebase'
 
 function DashBoardPage(props) {
@@ -26,7 +26,7 @@ function DashBoardPage(props) {
             <AppBar/>
             <div className='panelMainContainer'>
                 <SideBar/>
-                <DashboardPanel/>
+                <Outlet/>
             </div>
            
         </>
