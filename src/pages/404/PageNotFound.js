@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {PageNotFoundStyles} from './styles'
 
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from './../../libs/firebase'
@@ -19,12 +20,11 @@ function PageNotFound(props) {
 
     return ( 
         <>
-            <header>
-                <h1>Error 404: Page Not Found</h1>
-                {
-                    isUser? <Link to='/dashboard'>Return to Dashboard</Link> : <Link to='/'></Link>
-                }
-            </header>
+                <PageNotFoundStyles style={{ backgroundImage: "url(/img/404-img.jpg)"}}>
+                    {
+                        isUser? <Link to='/dashboard'>Return to Dashboard</Link> : <Link to='/'></Link>
+                    }
+                </PageNotFoundStyles>
         </>
      );
 }

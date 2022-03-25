@@ -10,9 +10,9 @@ function SideBar(props) {
     return ( 
         <SideBarContainer>
             <SideBarItems>
-                <Link to="/dashboard"><SideBarItem className="dashboardMenu" href="#"><IoTimerSharp></IoTimerSharp> Dashboard</SideBarItem></Link>
-                <Link to="add"><SideBarItem className="dashboardMenu" href="#"><IoCashOutline></IoCashOutline> Sales</SideBarItem></Link>
-                <SideBarItem className="dashboardMenu" href="#"><IoLibrarySharp></IoLibrarySharp> Products</SideBarItem>
+                <Link to="/dashboard"><SideBarItem className="dashboardMenu" href="#"><IoTimerSharp></IoTimerSharp>All Products</SideBarItem></Link>
+                <Link to="add"><SideBarItem className="dashboardMenu" href="#"><IoLibrarySharp></IoLibrarySharp>Add Products</SideBarItem></Link>
+                <SideBarItem className="dashboardMenu" href="#"><IoCashOutline></IoCashOutline> Sales</SideBarItem>
                 <SideBarItem className="dashboardMenu" href="#"><IoPeopleSharp></IoPeopleSharp> Customers</SideBarItem>
                 <SideBarItem className="dashboardMenu" href="#"><IoFolderOpenSharp></IoFolderOpenSharp> Inquiries</SideBarItem>
                 <SideBarItem className="dashboardMenu" href="#"><IoCart></IoCart> Orders</SideBarItem>
