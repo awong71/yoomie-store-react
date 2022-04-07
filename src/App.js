@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom"
-import { AddProductPanel, DashboardPanel } from "./components/panels";
+import { AddProductPanel, AllProductPanel } from "./components/panels";
 import {DashBoardPage, LoginPage, PageNotFound} from "./pages";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <Route path="/" element={<LoginPage/>}/>
         <Route path="*" element={<PageNotFound/>}/>
         <Route path="/dashboard" element={<DashBoardPage/>}>
-          <Route index element={<DashboardPanel/>}/>
+          <Route index element={<AllProductPanel/>}/>
           <Route path="add" element={<AddProductPanel title="Add New Product"/>}/>
           </Route>
       </Routes>
